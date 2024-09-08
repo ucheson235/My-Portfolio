@@ -13,14 +13,26 @@ html{
 body{
     background-color: black;
     color: #fff;
+    font-family: 'Lato', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Montserrat', sans-serif;
+  }
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(./uc-pic2.jpg);
+    background-image: url(./asset/uc-pic2.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.header-cover{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
 }
 
 .container{
@@ -35,9 +47,15 @@ nav{
     flex-wrap: wrap;
 }
 
-.logo {
-    width: 140px;
+.logo-div{
+    width: 100px;
 }
+
+.logo-div img{
+    width: 100%;
+}
+
+
 
 nav ul li{
     display: inline-block;
@@ -70,13 +88,13 @@ nav ul li a:hover::after{
 }
 
 .header-text p{
-    margin-top: 20px;
-    font-size: 4rem;
+    margin-top: 250px;
+    font-size: 2.5rem;
 
 }
 
 .header-text h1{
-    font-size:8rem;
+    font-size:3rem;
     margin-top: 20px;
 }
 
@@ -111,13 +129,14 @@ nav ul li a:hover::after{
 }
 
 .sub-title{
-    font-size: 8rem;
+    font-size: 3rem;
     font-weight: 600;
     color: #fff;
+    margin-bottom: 20px;
 
 }
 .about-col-2 p{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .tab-titles{
@@ -152,13 +171,13 @@ nav ul li a:hover::after{
 
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
-    font-size: 4rem;
+    margin: 20px 0;
+    font-size: 2rem;
 }
 
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .tab-contents{
@@ -196,15 +215,19 @@ nav ul li a:hover::after{
 }
 
 .Services-list div i{
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 30px;
 
 }
 
 .Services-list div h2{
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 15px;  
+}
+
+.Services-list div p{
+    font-size: 1rem;
 }
 
 .Services-list div a{
@@ -320,6 +343,10 @@ nav ul li a:hover::after{
 
 /* contact  */
 
+ #contact{
+    padding: 0 200px;
+ }
+
 .contact-left{
     flex-basis: 35%;
 }
@@ -401,27 +428,38 @@ form .btn2{
     color: #ff004f;
 }
 
+img {
+    pointer-events: auto;
+  }
+
 
 /* css for small screens */
 nav .fa-solid{
     display: none;
 }
 
+.layer {
+    display: none;
+  }
+  
+
 
 @media (max-width: 600px){
     #header{
-        background-image: url(./uc-pic2.jpg);
+        background-image: url(./asset/uc-pic3.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+
 
     html{
         font-size: 50%;
     }
 
     .header-text{
-        margin-top: 100%;
+        margin-top: 10px;
         font-size: 1rem;
     }
 
@@ -498,4 +536,9 @@ nav .fa-solid{
         font-size: 1rem;
     }
 
+    #contact{
+        padding: 100px ;
+     }
+
+  
 }
