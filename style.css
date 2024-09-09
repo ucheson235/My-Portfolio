@@ -463,7 +463,7 @@ nav .fa-solid{
     }
 
     .header-text{
-        margin-top: 10px;
+        margin-top: 200px;
         font-size: 1rem;
     }
 
@@ -471,16 +471,17 @@ nav .fa-solid{
         font-size: 2rem;
     }
 
-    nav .fa-solid{
+    nav .fa-solid {
         display: block;
         font-size: 1.5rem;
+        cursor: pointer;
     }
 
     .logo {
         width: 50px;
     }
 
-    nav ul{
+    nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
@@ -489,6 +490,13 @@ nav .fa-solid{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.3s ease;
+    }
+
+    nav ul.active {
+        right: 0;
+        height: 500px;
+       
     }
 
     nav ul li{
@@ -543,6 +551,25 @@ nav .fa-solid{
     #contact{
         padding: 100px ;
      }
+
+     #nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #0066cc;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+      }
+    
+      .nav-links.active {
+        display: flex;
+      }
+    
+      .nav-links li {
+        margin: 1rem 0;
+      }
 
   
 }

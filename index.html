@@ -19,15 +19,15 @@
            <div class="logo-div">
             <img src="./asset/uc-logo-2.webp" alt="">
            </div>
-            <ul>
+            <ul class="navLinks" id="navLinks">
               <li><a href="#header">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#Services">Services</a></li>
               <li><a href="https://github.com/ucheson235">Github</a></li>
               <li><a href="#contact">Contact</a></li>
-              <i class="fa-solid fa-circle-xmark"></i>
+              <i class="fa-solid fa-circle-xmark" id="closeButton"></i>
             </ul>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" id="toggleButton"></i>
           </nav>
           <div class="header-text">
             <p>Frontend Engineer</p>
@@ -243,17 +243,6 @@
     <p>copyright @ Ucheson <i class="fa-solid fa-heart"></i> 2024</p>
   </div>
 
- 
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbw3xepclcsC1c40N78xB8cLUtI_nDYiN-XeW2jCy-MDBYIPgEJpjSF0mikCXbQclEBMig/exec'
-      const form = document.forms['submit-to-google-sheet']
-
-      form.addEventListener('submit', e =>{
-        e.preventDefault()
-        fetch(scriptURL,{method:'POST', body: new FormData(form)})
-           .then(response => console.log('Success!',response))
-           .catch(error =>console.error('Error!',error.message))
-      })
-    </script>
+    <script src="./app.js"></script>
   </body>
 </html>
