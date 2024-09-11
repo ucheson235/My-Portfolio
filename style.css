@@ -51,8 +51,10 @@ nav{
     width: 100px;
 }
 
-.logo-div img{
+.logo-div h1{
     width: 100%;
+    border-radius: 10px;
+    font-size: 3rem;
 }
 
 
@@ -88,7 +90,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 250px;
+    margin-top: 400px;
     
 }
 
@@ -463,7 +465,7 @@ nav .fa-solid{
     }
 
     .header-text{
-        margin-top: 200px;
+        margin-top: 400px;
         font-size: 1rem;
     }
 
