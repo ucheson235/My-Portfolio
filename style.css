@@ -57,6 +57,13 @@ nav{
     font-size: 3rem;
 }
 
+.intro{
+    font-size: 20px;
+    color:white;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
 
 
 nav ul li{
@@ -97,6 +104,13 @@ nav ul li a:hover::after{
 .header-text p{
     font-size: 2.5rem;
 
+}
+
+.intro{
+    font-size: 20px;
+    color:white;
+    margin-top: 5px;
+    font-weight: 500;
 }
 
 .header-text h1{
@@ -472,6 +486,13 @@ nav .fa-solid{
     .header-text h1{
         font-size: 2rem;
     }
+
+    .intro{
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+
+   
 
     nav .fa-solid {
         display: block;
